@@ -51,25 +51,23 @@ This project demonstrates full-stack development, database integration, and depl
 
 ## Repository Structure
 
-\```
-TA-Web-Application/
-│── app/              # Main application code
-│── templates/        # HTML templates
-│── static/           # CSS, JS, images
-│── requirements.txt  # Python dependencies
-│── manage.py         # Application runner
-└── README.md         # Project documentation
-\```
-
+   ```bash
+   TA-Web-Application/
+   │── app/              # Main application code
+   │── templates/        # HTML templates
+   │── static/           # CSS, JS, images
+   │── requirements.txt  # Python dependencies
+   │── manage.py         # Application runner
+   └── README.md         # Project documentation
+   ```
 
 ## Testing
 
 Run the test suite:
 
-\```
-pytest
-\```
-
+   ```bash
+   pytest
+   ```
 
 ## Documentation
 
