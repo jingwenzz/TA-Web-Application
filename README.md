@@ -53,26 +53,31 @@ This project demonstrates full-stack development, database integration, and depl
 
    ```bash
    TA-Web-Application/
-   │── app/              # Main application code
-   │── templates/        # HTML templates
-   │── static/           # CSS, JS, images
-   │── requirements.txt  # Python dependencies
-   │── manage.py         # Application runner
-   └── README.md         # Project documentation
+   │── TAWebApplication.sln # Visual Studio solution file
+   │
+   ├── TAWebApplication/ # Main Windows Forms application
+   │ ├── Forms/ # UI components: LoginForm, TaskViewForm, etc.
+   │ ├── Helpers/ # Utility classes for formatting and processing
+   │ ├── Models/ # Data models for TAs, tasks, students, etc.
+   │ ├── Services/ # Core logic: authentication, task/grade management
+   │ ├── Program.cs # Application entry point
+   │ └── App.config # Configuration file
+   │
+   ├── TAWebApplicationTests/ # (Optional) Unit test project
+   │ └── (Add test files here)
+   │
+   └── README.md # Project documentation
    ```
 
 ## Testing
+To add unit tests, create test classes under the `TAWebApplicationTests/` folder. You can run tests using the built-in Visual Studio Test Explorer or with `dotnet test` if targeting .NET Core.
 
-Run the test suite:
-
-   ```bash
-   pytest
-   ```
 
 ## Documentation
 
-- API endpoints and usage examples can be added to the `docs/` directory.  
-- Configuration files and environment variables should be documented in `config/`.
+- Application behavior and form usage are described in source code comments within each `Form.cs` file.  
+- Configuration is managed via `App.config`.  
+- You may add high-level design notes in a `docs/` folder if needed.
 
 
 ## Contributing
